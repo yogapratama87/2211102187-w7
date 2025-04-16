@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Mahasiswa + Warna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Modal */
+    .modal {
+      display: none; 
+      position: fixed;
+      z-index: 1;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 0;
+      border-radius: 10px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .modal-content div {
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .panjang { background-color: #4CAF50; }
+    .panggilan { background-color: #2196F3; }
+    .nim { background-color: #FF9800; }
+    .hobi { background-color: #9C27B0; }
+
+    .close {
+      background: #f44336;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    /* Box warna */
+    .warna-box {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .warna {
+      width: 220px;
+      padding: 15px;
+      border-radius: 10px;
+      color: white;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-weight: bold;
+    }
+
+    .merah { background-color: red; }
+    .kuning { background-color: gold; color: black; }
+    .hijau { background-color: green; }
+    .biru { background-color: blue; }
+  </style>
+</head>
+<body>
+
+  <h1>Yoga Pratama</h1>
+  <h2>2211102187</h2>
+  <button onclick="document.getElementById('myModal').style.display='block'">
+    Launch Modal
+  </button>
+
+ 
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="panjang">Nama Panjang: Yoga Pratama</div>
+      <div class="panggilan">Nama Panggilan: Yoga</div>
+      <div class="nim">NIM: 2211102187</div>
+      <div class="hobi">Hobi: Bermain gitar</div>
+      <div class="close" onclick="document.getElementById('myModal').style.display='none'">
+        Tutup
+      </div>
+    </div>
+  </div>
+
+
+  <div class="warna-box">
+    <div class="warna merah">
+      Merah - Red - 赤 (Aka)
+    </div>
+    <div class="warna kuning">
+      Kuning - Yellow - 黄色 (Kiiro)
+    </div>
+    <div class="warna hijau">
+      Hijau - Green - 緑 (Midori)
+    </div>
+    <div class="warna biru">
+      Biru - Blue - 青 (Ao)
+    </div>
+  </div>
+
+</body>
+</html>
